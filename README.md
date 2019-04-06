@@ -6,15 +6,23 @@
 RNA-Seq will be validated with High-Resolution RTPCR data
 
 Description of the algorithm
+
 This algorithm is a collection of 7 small Bash Shell scripts that associates HR-RT PCR data with a transcriptome previously quantified with Salmon.
 
 Individual modules description:
+
 Module 1 : Blast generates a transcriptome database with the transcriptome supplied in fasta format; The primers sequence are blasted (blastn) to the previous database;
+
 Module 2 :
+
 Module 3 :
+
 Module 4 :
+
 Module 5 :
+
 Module 6 :
+
 Module 7 :
 
 Tools and steps needed before running the script:
