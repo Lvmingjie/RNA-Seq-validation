@@ -8,7 +8,7 @@ Contact: Paulo.Flores@hutton.ac.uk / paulorapazote@gmail.com
 
 RNA-Seq will be validated with High-Resolution RTPCR data
 
-Description of the algorithm
+# Description of the algorithm
 
 This algorithm is a collection of 7 small Bash Shell scripts that associates HR-RT PCR data with a transcriptome previously quantified with Salmon.
 
@@ -28,13 +28,13 @@ Module 6 :
 
 Module 7 :
 
-Tools and steps needed before running the script:
+# Tools and steps needed before running the script:
 
 Before running the algoritm is necessary to run Salmon, a pseudo alignment tool (algorithm tested with version 0.8.2).
 
 Also, it is necessary ncbi blast tool (algorithm tested with version ncbi-blast-2.2.28+)
 
-Input Files:
+# Input Files:
 
 transcriptome.fasta file
 
@@ -44,7 +44,7 @@ rtPCR_productsAndProportions.txt (must be located in the same folder where you r
 
 Location of Salmon output
 
-Output Files:
+# Output Files:
 
 Complete-PrimerBestPairs-data.txt file contains the principal results
 
@@ -52,6 +52,6 @@ FileWithAllSampleTPMs.txt contains the list of transcripts and TPM per sample (c
 
 Other_files folder contains intermediate files
 
-Running the algorithm
+# Running the algorithm
 
 bash ./HR-RTPCR_RNA-Seq_Comparison.sh
