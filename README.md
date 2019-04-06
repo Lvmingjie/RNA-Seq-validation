@@ -29,20 +29,29 @@ Module 6 :
 Module 7 :
 
 Tools and steps needed before running the script:
+
 Before running the algoritm is necessary to run Salmon, a pseudo alignment tool (algorithm tested with version 0.8.2).
 
 Also, it is necessary ncbi blast tool (algorithm tested with version ncbi-blast-2.2.28+)
 
 Input Files:
+
 transcriptome.fasta file
+
 PPrimersSequences.fasta
+
 rtPCR_productsAndProportions.txt (must be located in the same folder where you run the algorithm)
+
 Location of Salmon output
 
 Output Files:
+
 Complete-PrimerBestPairs-data.txt file contains the principal results
+
 FileWithAllSampleTPMs.txt contains the list of transcripts and TPM per sample (clustered)
+
 Other_files folder contains intermediate files
 
 Running the algorithm
+
 bash ./HR-RTPCR_RNA-Seq_Comparison.sh
