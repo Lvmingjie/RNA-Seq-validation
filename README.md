@@ -4,13 +4,13 @@ Author: Paulo Flores : 2019
 
 Contact: Paulo.Flores@hutton.ac.uk / paulorapazote@gmail.com
 
-RNA-Seq will be validated with High-Resolution RTPCR data
+"RNA-Seq will be validated with High-Resolution HR-RTPCR data"
 
 # Description of the algorithm
 
-This algorithm (HR-RTPCR_RNA-Seq_Comparison.sh) is a collection of 7 small bash shell scripts that associate HR-RT PCR data with a transcriptome previously quantified with SALMON.
+This algorithm (HR-RTPCR_RNA-Seq_Comparison.sh) is a collection of 7 small bash shell scripts that associate HR-RTPCR data with a transcriptome previously quantified with SALMON.
 
-Individual modules description:
+Description of the individual scripts (modules):
 
 Module 1 : Blast generates a transcriptome database with the transcriptome supplied in fasta format; The primers sequence are blasted (blastn) to the previous database;
 
@@ -26,18 +26,30 @@ Module 6 :
 
 Module 7 :
 
-# Tools and steps needed before running the script:
+# Tools and steps needed before running the algorithm:
 
-Before running the HR-RTPCR_RNA-Seq_Comparison.sh algorithm is necessary to run SALMON, a pseudo alignment tool (algorithm tested with version 0.8.2).
+Before running the HR-RTPCR_RNA-Seq_Comparison.sh algorithm was necessary to run SALMON, a pseudo alignment tool (algorithm tested with SALMON version 0.8.2). We aligned each of our RNA-Seq read samples to the reference transcriptome (transcriptome.fasta file) after index generation. Each SALMON output sample must be in a individual folder, line 29 of the algorithm contains the path to the folder where the samples are. 
 
-Also, it is necessary ncbi blast tool (algorithm tested with version ncbi-blast-2.2.28+)
+Also, it is necessary ncbi blast tool (algorithm tested with version ncbi-blast-2.2.28+), path mentioned lines 42 and 50.
+
+Threads, we run the algorithm with 4 threads (algorithm lines 2 and 50)
 
 # Input Files:
 
-1. transcriptome.fasta file, this file should contain the transcript sequences in fasta format. The transcript headers shouldn't contain empty spaces. It must be edited the line 20 (path to the folder where is the transcriptome) and line 22 (transcriptome file name) in the algorithm to identify the folder location and correct name you are using.
+1. transcriptome.fasta file, this file contains the transcript sequences in fasta format. The transcript headers can not contain empty spaces. Algorithm lines 20 (path to the folder where is the transcriptome) and line 22 (transcriptome file name) identify the folder location and transcriptome fasta file name we used.
 
-2. PPrimersSequences.fasta, this file should contain the primer sequences in fasta format. Each pair of primers (reverse and forward) should have similar name but ending with different terminations: _R (reverse) and _F (forward), example - Hv43_R and Hv43_R.   
-3. rtPCR_productsAndProportions.txt (must be located in the same folder where you run the algorithm), tab-delimited text file containing (1) primer names without _R or _F termination (previous example - Hv43 and Hv43), (2) HR-RT PCR product size (the computed nucleotide distance between primer pairs), (3) and following columns - individual sample proportions of each product primer:
+2. PrimersSequences.fasta, this file contains the primer sequences in fasta format. Each pair of primers (reverse and forward) have similar name but end with different terminations: _R (reverse) and _F (forward), example - Hv43_R and Hv43_R. 
+
+3. rtPCR_productsAndProportions.txt (file located in the same folder where we run the algorithm), tab-delimited text file containing:
+
+Column (1) primer names without _R or _F termination (previous example - Hv43 and Hv43); 
+
+Column (2) HR-RT PCR product size (the computed nucleotide distance between primer pairs);
+
+Columns (3), (4), (..) - individual sample proportions of each product primer;
+
+Example of rtPCR_productsAndProportions.txt file:
+
 
 Primer 	Size	SAMPLE1	SAMPLE2	SAMPLE3	SAMPLE4	SAMPLE5
 
@@ -55,7 +67,7 @@ Hv43C	403	0.19	0.17	0.00	0.00	0.00
 
 Hv43C	540	0.06	0.06	0.00	0.00	0.00
 
-4. Location of Salmon output
+
 # Output Files:
 Complete-PrimerBestPairs-data.txt file contains the principal results
 FileWithAllSampleTPMs.txt contains the list of transcripts and TPM per sample (clustered)
