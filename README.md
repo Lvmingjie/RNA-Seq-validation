@@ -55,7 +55,7 @@ Threads, we run the algorithm with 4 threads (algorithm lines 2 and 50).<p/>
 
  b) Column 2, HR-RT PCR product size (the computed nucleotide distance between primer pairs);
 
- c) Columns 3, 4, ... - individual sample proportions of each product primer;
+ c) Columns 3, 4, ... - individual sample proportions of each primer product;
 
 
 <h2> Output Files: </h2>
