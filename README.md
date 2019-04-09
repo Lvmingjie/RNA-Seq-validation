@@ -47,7 +47,7 @@ Three input files are required:
 
 <h2> Output Files </h2>
 
-<b>Complete-PrimerBestPairs-data.txt</b> file contains the principal results, each line presents the transcripts identified and the best RNA-Seq product Sizes that are associated with each HR-RTPCR primer product Size. Example of this file:
+<b>Complete-PrimerBestPairs-data.txt</b> file contains the principal results, each line presents the transcripts identified and the best RNA-Seq product Size that is associated with each HR-RTPCR primer product Size. Example of this file:
 
         Primer Size Sample1 Sample2 Sample3 Sample4 Sample5 Best_RNA-Seq_partner_product-size Transcripts Difference_Product-sizes Sample1 Sample2 Sample3 Sample4 Sample5 
         Hv29C 124 0.38 0.29 0.44 0.45 0.23 124 MSTRG.27957.11,MSTRG.27957.13,MSTRG.27957.15,MSTRG.27957.17,MSTRG.27957.18,MSTRG.27957.23,MSTRG.27957.4,MSTRG.27957.5 0 4.09128 4.09417 2.38327 9.74633 13.8822
