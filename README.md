@@ -22,11 +22,11 @@ The default number of processing threads is 4, however this number can be change
 
 Three input files are required:
 
-1. transcriptome.fasta file, this file contains the transcript sequences in fasta format. The transcript headers can't contain empty spaces. Algorithm lines 20 (path to the folder where is the transcriptome) and line 22 (transcriptome file name) identify the folder location and transcriptome fasta file name used.
+1. <b>transcriptome.fasta</b> file, this file contains the transcript sequences in fasta format. The transcript headers can't contain empty spaces. Algorithm lines 20 (path to the folder where is the transcriptome) and line 22 (transcriptome file name) identify the folder location and transcriptome fasta file name used.
 
-2. PrimersSequences.fasta, this file contains the primer sequences in fasta format. Each pair of primers (reverse and forward) have similar name but should have different terminations: _R (reverse) and _F (forward), example - Hv43_R and Hv43_F. 
+2. <b>PrimersSequences.fasta</b>, this file contains the primer sequences in fasta format. Each pair of primers (reverse and forward) have similar name but should have different terminations: _R (reverse) and _F (forward), example - Hv43_R and Hv43_F. 
 
-3. rtPCR_productsAndProportions.txt (file located in the same folder where we run the algorithm), tab-delimited text file HR-RTPCR data. Example of rtPCR_productsAndProportions.txt file:
+3. <b>rtPCR_productsAndProportions.txt</b> (file located in the same folder where we run the algorithm), tab-delimited text file HR-RTPCR data. Example of the rtPCR_productsAndProportions.txt file:
         
         Primer Size Sample1 Sample2 Sample3 Sample4 Sample5
         Hv43	228	0.03	0.01	0.00	0.00	0.00
@@ -47,7 +47,7 @@ Three input files are required:
 
 <h2> Output Files </h2>
 
-Complete-PrimerBestPairs-data.txt file contains the principal results, each line present the best transcripts identified and RNA-Seq product Sizes that are associated with each HR-RTPCR primer product Size. Example of this file:
+<b>Complete-PrimerBestPairs-data.txt</b> file contains the principal results, each line present the best transcripts identified and RNA-Seq product Sizes that are associated with each HR-RTPCR primer product Size. Example of this file:
 
         Primer Size Sample1 Sample2 Sample3 Sample4 Sample5 Best_RNA-Seq_partner_product-size Transcripts Difference_Product-sizes Sample1 Sample2 Sample3 Sample4 Sample5 
         Hv29C 124 0.38 0.29 0.44 0.45 0.23 124 MSTRG.27957.11,MSTRG.27957.13,MSTRG.27957.15,MSTRG.27957.17,MSTRG.27957.18,MSTRG.27957.23,MSTRG.27957.4,MSTRG.27957.5 0 4.09128 4.09417 2.38327 9.74633 13.8822
@@ -71,18 +71,18 @@ Complete-PrimerBestPairs-data.txt file contains the principal results, each line
 
 Columns explanation:
 
-   a) The first columns - Primer, Size and the following 5 samples columns displays the HR-RTPCR information (also present in the PCR_productsAndProportions.txt file)  
+   a) The first columns - Primer, Size and the following 5 samples columns displays the HR-RTPCR information (also present in the <b>PCR_productsAndProportions.txt</b> file)  
    
-   b) Column "Transcripts" displays the RNA-Seq transcripts where the primers aligned (blastn-short) perfectly. These transcripts also have the most similar product Size to the HR-RTPCR one;
+   b) Column <b>Transcripts</b> displays the RNA-Seq transcripts where the primers aligned (blastn-short) perfectly. These transcripts also have the most similar product Size to the HR-RTPCR one;
 
-   c) Column "Best_RNA-Seq_partner_product-size" shows the most similar RNA-seq product Sizes identified;
+   c) Column <b>Best_RNA-Seq_partner_product-size</b> shows the most similar RNA-seq product Sizes identified;
 
-   d) Column "Difference_Product-sizes" displays the numerical difference between the HR-RTPCR product Size value and the RNA-seq one. When both product Sizes (HR-RTPCR and RNA-seq) are equal the difference is zero. We considered valid a maximum differences of 6 nucleotides. 
+   d) Column <b>Difference_Product-sizes</b> displays the numerical difference between the HR-RTPCR product Size value and the RNA-seq one. When both product Sizes (HR-RTPCR and RNA-seq) are equal the difference is zero. We considered valid a maximum differences of 6 nucleotides. 
 
-   e) All columns after "Difference_Product-sizes" present the clustered TPM values to each RNA-Seq sample. This means that all transcripts, with the same product Size were summed in terms of transcript expression in each sample;
+   e) All columns after <b>Difference_Product-sizes</b> present the clustered TPM values to each RNA-Seq sample. This means that all transcripts, with the same product Size were summed in terms of transcript expression in each sample;
 
 
-FileWithAllSampleTPMs.txt contains the list of transcripts and TPM (Transcript per Million) values per sample (clustered).
+<b>FileWithAllSampleTPMs.txt</b> contains the list of transcripts and TPM (Transcript per Million) values per sample (clustered).
 
 
 <b>Other_files</b> folder contains intermediate files.
