@@ -34,21 +34,21 @@ Threads, we run the algorithm with 4 threads (algorithm lines 2 and 50).<p/>
 
 3. rtPCR_productsAndProportions.txt (file located in the same folder where we run the algorithm), tab-delimited text file containing.Example of rtPCR_productsAndProportions.txt file:
         
-      Primer Size Sample1 Sample2 Sample3 Sample4 Sample5
+        Primer Size Sample1 Sample2 Sample3 Sample4 Sample5
 
-      Hv43C	228	0.03	0.01	0.00	0.00	0.00
+        Hv43C	228	0.03	0.01	0.00	0.00	0.00
 
-      Hv43C	251	0.02	0.02	0.00	0.00	0.00
+        Hv43C	251	0.02	0.02	0.00	0.00	0.00
 
-      Hv43C	263	0.16	0.15	0.00	0.00	0.00
+        Hv43C	263	0.16	0.15	0.00	0.00	0.00
 
-      Hv43C	388	0.45	0.51	0.00	0.00	0.00
+        Hv43C	388	0.45	0.51	0.00	0.00	0.00
 
-      Hv43C	391	0.09	0.08	0.00	0.00	0.00
+        Hv43C	391	0.09	0.08	0.00	0.00	0.00
 
-      Hv43C	403	0.19	0.17	0.00	0.00	0.00
+        Hv43C	403	0.19	0.17	0.00	0.00	0.00
 
-      Hv43C	540	0.06	0.06	0.00	0.00	0.00 
+        Hv43C	540	0.06	0.06	0.00	0.00	0.00 
       
 
  a) Column 1, primer names without _R or _F termination (example - Hv43); 
