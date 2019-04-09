@@ -22,7 +22,7 @@ Threads, we run the algorithm with 4 threads (algorithm lines 2 and 50)
 
 1. transcriptome.fasta file, this file contains the transcript sequences in fasta format. The transcript headers can not contain empty spaces. Algorithm lines 20 (path to the folder where is the transcriptome) and line 22 (transcriptome file name) identify the folder location and transcriptome fasta file name we used.
 
-2. PrimersSequences.fasta, this file contains the primer sequences in fasta format. Each pair of primers (reverse and forward) have similar name but end with different terminations: _R (reverse) and _F (forward), example - Hv43_R and Hv43_R. 
+2. PrimersSequences.fasta, this file contains the primer sequences in fasta format. Each pair of primers (reverse and forward) have similar name but end with different terminations: _R (reverse) and _F (forward), example - Hv43_R and Hv43_F. 
 
 3. rtPCR_productsAndProportions.txt (file located in the same folder where we run the algorithm), tab-delimited text file containing:
 
@@ -60,13 +60,13 @@ Hv43C	540	0.06	0.06	0.00	0.00	0.00
 # Output Files:
 Complete-PrimerBestPairs-data.txt file contains the principal results, each line present the best transcripts and RNA-Seq products that are associated with each HR-RTPCR primer product:
 
-Column "transcripts" present the RNA-Seq transcripts were the primers bound perfectly and the best product lenght available
+Column "transcripts" present the RNA-Seq transcripts were the primers bound perfectly and the best product lenght available;
 
-Column "Best_RNA-Seq_partner_product-size" shows the most similar HR RTPCR product size
+Column "Best_RNA-Seq_partner_product-size" shows the most similar HR RTPCR product size;
 
-Column "Difference_Product-sizes" shows the numerical difference between the best (nearest) RNA-seq product
+Column "Difference_Product-sizes" shows the numerical difference between the best (nearest) RNA-seq product;
 
-Columns after "Difference_Product-sizes" column present the clustered TPM values to each sample
+Columns after "Difference_Product-sizes" column present the clustered TPM values to each sample;
 
 Primer Size Sample1	Sample2	Sample3	Sample4	Sample5 Best_RNA-Seq_partner_product-size Transcripts Difference_Product-sizes Sample1	Sample2	Sample3	Sample4	Sample5
 
