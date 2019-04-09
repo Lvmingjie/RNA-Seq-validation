@@ -35,9 +35,9 @@ Columns (3), (4), (..) - individual sample proportions of each product primer;
 Example of rtPCR_productsAndProportions.txt file:
 
 <table>
-    <tr>
+        <tr>
 <td>      
-Primer 	Size	Sample1	Sample2	Sample3	Sample4	Sample5
+Primer	Size	Sample1	Sample2	Sample3	Sample4	Sample5
 
 Hv43C	228	0.03	0.01	0.00	0.00	0.00
 
@@ -52,9 +52,8 @@ Hv43C	391	0.09	0.08	0.00	0.00	0.00
 Hv43C	403	0.19	0.17	0.00	0.00	0.00
 
 Hv43C	540	0.06	0.06	0.00	0.00	0.00 
-                                                </td>
-
-    </tr>
+</td>
+        </tr>
 </table
 
 
