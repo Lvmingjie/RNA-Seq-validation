@@ -32,17 +32,8 @@ Threads, we run the algorithm with 4 threads (algorithm lines 2 and 50).<p/>
 
 2. PrimersSequences.fasta, this file contains the primer sequences in fasta format. Each pair of primers (reverse and forward) have similar name but end with different terminations: _R (reverse) and _F (forward), example - Hv43_R and Hv43_F. 
 
-3. rtPCR_productsAndProportions.txt (file located in the same folder where we run the algorithm), tab-delimited text file containing:
-
-      a) Column 1, primer names without _R or _F termination (example - Hv43); 
-
-      b) Column 2, HR-RT PCR product size (the computed nucleotide distance between primer pairs);
-
-      c) Columns 3, 4, ... - individual sample proportions of each product primer;
-
-Example of rtPCR_productsAndProportions.txt file:
-
-   
+3. rtPCR_productsAndProportions.txt (file located in the same folder where we run the algorithm), tab-delimited text file containing.Example of rtPCR_productsAndProportions.txt file:
+        
       Primer Size Sample1 Sample2 Sample3 Sample4 Sample5
 
       Hv43C	228	0.03	0.01	0.00	0.00	0.00
@@ -58,7 +49,13 @@ Example of rtPCR_productsAndProportions.txt file:
       Hv43C	403	0.19	0.17	0.00	0.00	0.00
 
       Hv43C	540	0.06	0.06	0.00	0.00	0.00 
+      
 
+ a) Column 1, primer names without _R or _F termination (example - Hv43); 
+
+ b) Column 2, HR-RT PCR product size (the computed nucleotide distance between primer pairs);
+
+ c) Columns 3, 4, ... - individual sample proportions of each product primer;
 
 
 <h2> Output Files: </h2>
