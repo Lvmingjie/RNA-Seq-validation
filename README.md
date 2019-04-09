@@ -78,7 +78,7 @@ Complete-PrimerBestPairs-data.txt file contains the principal results, each line
    d) Columns after "Difference_Product-sizes" column present the clustered TPM values to each sample;
 
 
-FileWithAllSampleTPMs.txt contains the list of transcripts and TPM per sample (clustered).
+FileWithAllSampleTPMs.txt contains the list of transcripts and TPM (Transcript per Million) values per sample (clustered).
 
 
 Other_files folder contains intermediate files.
