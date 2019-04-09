@@ -2,12 +2,6 @@
 
 # RNA-Seq-validation
 
-
-<h1> fftftfff </h1>
-<h2> fftftfff </h2>
-<h3> fftftfff </h3>
-<h4> fftftfff </h4>
-
 Author: Paulo Flores : 2019
 
 Contact: Paulo.Flores@hutton.ac.uk / paulorapazote@gmail.com
@@ -35,19 +29,12 @@ Threads, we run the algorithm with 4 threads (algorithm lines 2 and 50).<p/>
 3. rtPCR_productsAndProportions.txt (file located in the same folder where we run the algorithm), tab-delimited text file containing. Example of rtPCR_productsAndProportions.txt file:
         
         Primer Size Sample1 Sample2 Sample3 Sample4 Sample5
-
         Hv43	228	0.03	0.01	0.00	0.00	0.00
-
         Hv43	251	0.02	0.02	0.00	0.00	0.00
-
         Hv43	263	0.16	0.15	0.00	0.00	0.00
-
         Hv43	388	0.45	0.51	0.00	0.00	0.00
-
         Hv43	391	0.09	0.08	0.00	0.00	0.00
-
         Hv43	403	0.19	0.17	0.00	0.00	0.00
-
         Hv43	540	0.06	0.06	0.00	0.00	0.00 
       
 
