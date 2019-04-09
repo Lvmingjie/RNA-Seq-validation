@@ -14,7 +14,7 @@ Contact: Paulo.Flores@hutton.ac.uk / paulorapazote@gmail.com
 
 "RNA-Seq will be validated with High-Resolution HR-RTPCR data"
 
-# Description of the algorithm
+<h2> Description of the algorithm </h2>
 
 This algorithm (HR-RTPCR_RNA-Seq_Comparison.sh) is a collection of 7 small bash shell scripts that associate HR-RTPCR data with a transcriptome previously quantified with SALMON.
 
