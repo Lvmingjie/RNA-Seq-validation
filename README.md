@@ -70,13 +70,15 @@ Complete-PrimerBestPairs-data.txt file contains the principal results, each line
         Hv104C 251 0.67 0.31 0.36 0.76 0.60 251 MSTRG.5011.1,MSTRG.5013.1 0 3.43897 5.0858 5.55545 10.5445 3.370
 
 
-   a) Column "transcripts" present the RNA-Seq transcripts were the primers bound perfectly and the best product lenght available;
+   a) The first columns - Primer, Size and the following 5 samples columns displays the HR-RTPCR information (also present in the PCR_productsAndProportions.txt file)  
+   
+   a) Column "transcripts" displays the RNA-Seq transcripts where the primers bound perfectly. These transcripts also have the most similar product size to the HR-RTPCR one;
 
-   b) Column "Best_RNA-Seq_partner_product-size" shows the most similar HR RTPCR product size;
+   b) Column "Best_RNA-Seq_partner_product-size" shows the most similar RNA-seq product Sizes identified;
 
-   c) Column "Difference_Product-sizes" shows the numerical difference between the best (nearest) RNA-seq product;
+   c) Column "Difference_Product-sizes" shows the numerical difference between the HR-RTPCR product size value and the RNA-seq one. When both product sizes (HR-RTPCR and RNA-seq) are equal the difference is zero. We allowed maximum differences of 6 nucleotides 
 
-   d) Columns after "Difference_Product-sizes" column present the clustered TPM values to each sample;
+   d) All columns after "Difference_Product-sizes" present the clustered TPM values to each RNA-Seq sample, per product size. This means  that all transcripts, with the same product size were summed in terms of transcript expression in each sample;
 
 
 FileWithAllSampleTPMs.txt contains the list of transcripts and TPM (Transcript per Million) values per sample (clustered).
