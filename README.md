@@ -95,3 +95,9 @@ Module 6 :
 Module 7 :
 
 
+<table>
+    <tr>
+        <td>Foo</td>
+    </tr>
+</table
+
