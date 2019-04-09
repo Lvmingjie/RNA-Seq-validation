@@ -32,7 +32,7 @@ Threads, we run the algorithm with 4 threads (algorithm lines 2 and 50).<p/>
 
 2. PrimersSequences.fasta, this file contains the primer sequences in fasta format. Each pair of primers (reverse and forward) have similar name but end with different terminations: _R (reverse) and _F (forward), example - Hv43_R and Hv43_F. 
 
-3. rtPCR_productsAndProportions.txt (file located in the same folder where we run the algorithm), tab-delimited text file containing.Example of rtPCR_productsAndProportions.txt file:
+3. rtPCR_productsAndProportions.txt (file located in the same folder where we run the algorithm), tab-delimited text file containing. Example of rtPCR_productsAndProportions.txt file:
         
         Primer Size Sample1 Sample2 Sample3 Sample4 Sample5
 
