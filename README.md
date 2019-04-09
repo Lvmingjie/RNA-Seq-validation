@@ -21,7 +21,9 @@ This algorithm (HR-RTPCR_RNA-Seq_Comparison.sh) is a collection of 7 small bash 
 <h2>Tools and steps needed before running the algorithm: </h2>
 
 <p>Before running the HR-RTPCR_RNA-Seq_Comparison.sh algorithm was necessary to run SALMON, a pseudo alignment tool (algorithm tested with SALMON version 0.8.2). We aligned each of our RNA-Seq read samples to the reference transcriptome (transcriptome.fasta file) after index generation. Each SALMON output sample must be in a individual folder, line 29 of the algorithm contains the path to the folder where the samples are. 
-Also, it is necessary ncbi blast tool (algorithm tested with version ncbi-blast-2.2.28+), path mentioned lines 42 and 50. <hr>
+
+Also, it is necessary ncbi blast tool (algorithm tested with version ncbi-blast-2.2.28+), path mentioned lines 42 and 50.
+
 Threads, we run the algorithm with 4 threads (algorithm lines 2 and 50).<p/>
 
 <h2> Input Files:</h2>
