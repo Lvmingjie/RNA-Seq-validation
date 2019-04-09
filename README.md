@@ -24,7 +24,7 @@ Before running the HR-RTPCR_RNA-Seq_Comparison.sh algorithm was necessary to run
 
 Also, it is necessary ncbi blast tool (algorithm tested with version ncbi-blast-2.2.28+), path mentioned lines 42 and 50.
 
-Threads, we run the algorithm with 4 threads (algorithm lines 2 and 50)
+Threads, we run the algorithm with 4 threads (algorithm lines 2 and 50).
 
 <h2> Input Files:</h2>
 
@@ -34,7 +34,7 @@ Threads, we run the algorithm with 4 threads (algorithm lines 2 and 50)
 
 3. rtPCR_productsAndProportions.txt (file located in the same folder where we run the algorithm), tab-delimited text file containing:
 
-Column (1) primer names without _R or _F termination (previous example - Hv43); 
+Column (1) primer names without _R or _F termination (example - Hv43); 
 
 Column (2) HR-RT PCR product size (the computed nucleotide distance between primer pairs);
 
