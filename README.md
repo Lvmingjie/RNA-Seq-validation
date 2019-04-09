@@ -18,7 +18,7 @@ Contact: Paulo.Flores@hutton.ac.uk / paulorapazote@gmail.com
 
 This algorithm (HR-RTPCR_RNA-Seq_Comparison.sh) is a collection of 7 small bash shell scripts that associate HR-RTPCR data with a transcriptome previously quantified with SALMON.
 
-# Tools and steps needed before running the algorithm:
+<h2>Tools and steps needed before running the algorithm: </h2>
 
 Before running the HR-RTPCR_RNA-Seq_Comparison.sh algorithm was necessary to run SALMON, a pseudo alignment tool (algorithm tested with SALMON version 0.8.2). We aligned each of our RNA-Seq read samples to the reference transcriptome (transcriptome.fasta file) after index generation. Each SALMON output sample must be in a individual folder, line 29 of the algorithm contains the path to the folder where the samples are. 
 
@@ -26,7 +26,7 @@ Also, it is necessary ncbi blast tool (algorithm tested with version ncbi-blast-
 
 Threads, we run the algorithm with 4 threads (algorithm lines 2 and 50)
 
-# Input Files:
+<h2> Input Files:</h2>
 
 1. transcriptome.fasta file, this file contains the transcript sequences in fasta format. The transcript headers can not contain empty spaces. Algorithm lines 20 (path to the folder where is the transcriptome) and line 22 (transcriptome file name) identify the folder location and transcriptome fasta file name we used.
 
@@ -65,7 +65,7 @@ Hv43C	540	0.06	0.06	0.00	0.00	0.00
 </table
 
 
-# Output Files:
+<h2> Output Files: </h2>
 Complete-PrimerBestPairs-data.txt file contains the principal results, each line present the best transcripts and RNA-Seq products that are associated with each HR-RTPCR primer product:
 
 Column "transcripts" present the RNA-Seq transcripts were the primers bound perfectly and the best product lenght available;
@@ -88,10 +88,10 @@ FileWithAllSampleTPMs.txt contains the list of transcripts and TPM per sample (c
 
 Other_files folder contains intermediate files
 
-# Running the algorithm
+<h2> Running the algorithm</h2>
 bash ./HR-RTPCR_RNA-Seq_Comparison.sh
 
-# Description of the individual scripts (modules):
+<h2> Description of the individual scripts (modules):</h2> 
 
 Module 1 : Blast generates a transcriptome database with the transcriptome supplied in fasta format; The primers sequence are blasted (blastn) to the previous database;
 
@@ -108,9 +108,5 @@ Module 6 :
 Module 7 :
 
 
-<table>
-    <tr>
-        <td>Foo</td>
-    </tr>
-</table
+
 
