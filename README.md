@@ -3,17 +3,8 @@
 # RNA-Seq-validation
 
 
-   
-
-   <body>
-      <p>This is a paragraph <span style = "color:#FF0000;">
-         This is a paragraph</span>This is a paragraph</p>
-      
-      <p><span style = "color:#8866ff;">
-         This is another paragraph</span></p>
-   </body>
-
-
+<h1> fftftfff </h1>
+<h2> fftftfff </h2>
 
 Author: Paulo Flores : 2019
 
