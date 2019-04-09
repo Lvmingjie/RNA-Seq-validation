@@ -85,7 +85,7 @@ Columns explanation:
 FileWithAllSampleTPMs.txt contains the list of transcripts and TPM (Transcript per Million) values per sample (clustered).
 
 
-Other_files folder contains intermediate files.
+<b>Other_files</b> folder contains intermediate files.
 
 <h2> Running the algorithm</h2>
 
