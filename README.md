@@ -1,9 +1,10 @@
 # RNA-Seq-validation
-
+<!DOCTYPE html>
+<html>
  <head>
       <title>HTML span Tag</title>
    </head>
-
+</html>
 
 Author: Paulo Flores : 2019
 
