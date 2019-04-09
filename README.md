@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html>
+
 
 # RNA-Seq-validation
 
 
-   <head>
-      <title>HTML span Tag</title>
-   </head>
+   
 
    <body>
       <p>This is a paragraph <span style = "color:#FF0000;">
@@ -16,7 +13,7 @@
          This is another paragraph</span></p>
    </body>
 
-</html>
+
 
 Author: Paulo Flores : 2019
 
