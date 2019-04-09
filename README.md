@@ -34,11 +34,11 @@ Threads, we run the algorithm with 4 threads (algorithm lines 2 and 50).<p/>
 
 3. rtPCR_productsAndProportions.txt (file located in the same folder where we run the algorithm), tab-delimited text file containing:
 
-        a) Column 1, primer names without _R or _F termination (example - Hv43); 
+      a) Column 1, primer names without _R or _F termination (example - Hv43); 
 
-        b) Column 2, HR-RT PCR product size (the computed nucleotide distance between primer pairs);
+      b) Column 2, HR-RT PCR product size (the computed nucleotide distance between primer pairs);
 
-        c) Columns 3, 4, ... - individual sample proportions of each product primer;
+      c) Columns 3, 4, ... - individual sample proportions of each product primer;
 
 Example of rtPCR_productsAndProportions.txt file:
 
@@ -69,13 +69,13 @@ Hv43C	540	0.06	0.06	0.00	0.00	0.00
 
 Complete-PrimerBestPairs-data.txt file contains the principal results, each line present the best transcripts and RNA-Seq products that are associated with each HR-RTPCR primer product:
 
-        a) Column "transcripts" present the RNA-Seq transcripts were the primers bound perfectly and the best product lenght available;
+   a) Column "transcripts" present the RNA-Seq transcripts were the primers bound perfectly and the best product lenght available;
 
-        b) Column "Best_RNA-Seq_partner_product-size" shows the most similar HR RTPCR product size;
+   b) Column "Best_RNA-Seq_partner_product-size" shows the most similar HR RTPCR product size;
 
-        c) Column "Difference_Product-sizes" shows the numerical difference between the best (nearest) RNA-seq product;
+   c) Column "Difference_Product-sizes" shows the numerical difference between the best (nearest) RNA-seq product;
 
-        d) Columns after "Difference_Product-sizes" column present the clustered TPM values to each sample;
+   d) Columns after "Difference_Product-sizes" column present the clustered TPM values to each sample;
 
 
 FileWithAllSampleTPMs.txt contains the list of transcripts and TPM per sample (clustered)
