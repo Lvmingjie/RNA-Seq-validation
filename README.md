@@ -1,5 +1,10 @@
 # RNA-Seq-validation
 
+ <head>
+      <title>HTML span Tag</title>
+   </head>
+
+
 Author: Paulo Flores : 2019
 
 Contact: Paulo.Flores@hutton.ac.uk / paulorapazote@gmail.com
