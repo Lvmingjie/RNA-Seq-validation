@@ -13,7 +13,9 @@ The algorithm HR-RTPCR_RNA-Seq_Comparison.sh is a compilation of 7 small bash sh
 <p align="center">
   <img width="350"  src="Images/Pipeline.png">
 </p>
+
 <h4>Pipeline describing the algorithm to compare HR-RT-PCR and RNA-seq alternatively spliced transcript proportions and correlations.</h4>
+
 
 <h2>Tools and steps needed before running the algorithm </h2>
 
