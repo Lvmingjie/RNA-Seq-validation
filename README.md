@@ -8,7 +8,7 @@ Contact: Paulo.Flores@hutton.ac.uk / paulorapazote@gmail.com
 
 <h2> Description of the algorithm </h2>
 
-The algorithm HR-RTPCR_RNA-Seq_Comparison.sh is a collection of 7 small bash shell scripts that associate HR-RTPCR data with a transcriptome previously quantified with SALMON. The paper (ref.) describes in detail the methodology behind the algorithm. However, below is presented more information about the format of input and output files, also an explanation about the main modules and running details.     
+The algorithm HR-RTPCR_RNA-Seq_Comparison.sh is a compilation of 7 small bash shell scripts that associate HR-RTPCR data with a transcriptome previously quantified with SALMON. The paper (ref.) describes in detail the methodology behind the algorithm. However, below is presented more information about the format of input and output files, also an explanation about the main modules and running details.     
 
 <h2>Tools and steps needed before running the algorithm </h2>
 
@@ -81,13 +81,14 @@ Columns explanation:
 
    e) All columns after <b>Difference_Product-sizes</b> present the clustered TPM values to each RNA-Seq sample. This means that all transcripts, with the same product Size were summed in terms of transcript expression in each sample. The RNA-Seq samples displayed are all samples present in the folder where SALMON quantification was performed.
 
-
+Based on the information of the previous file, we calculated to each RNA-Seq gene identified the TPM expression proportions related to each product Size. After, it was possible to correlate the list of HR-RTPCR sample proportions and the computed RNA-seq proportions.    
 
 <b>FileWithAllSampleTPMs.txt</b> contains the list of transcripts and TPM values per sample (not clustered).
 
 
 
 <b>Other_files</b> and <b>Expression_files</b> folders contain intermediate files.
+
 
 <h2> Running the algorithm</h2>
 
