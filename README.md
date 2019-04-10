@@ -89,7 +89,7 @@ Columns explanation:
 
 <h2> Running the algorithm</h2>
 
-bash ./HR-RTPCR_RNA-Seq_Comparison.sh
+bash <b>./HR-RTPCR_RNA-Seq_Comparison.sh</b>
 
 <h2> Description of the individual scripts (modules)</h2> 
 
