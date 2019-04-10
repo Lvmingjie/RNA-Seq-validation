@@ -11,15 +11,7 @@ Contact: Paulo.Flores@hutton.ac.uk / paulorapazote@gmail.com
 The algorithm HR-RTPCR_RNA-Seq_Comparison.sh is a compilation of 7 small bash shell scripts that associate HR-RTPCR data with a transcriptome previously quantified with SALMON. The paper (ref.) describes in detail the methodology behind the algorithm. However, below is presented more information about the format of input and output files, also an explanation about the main modules and running details.     
 
 
-<style type="text/css">
-.centerImage
-{
- text-align:center;
- display:block;
-}
-</style>
-
-<img src="Images/Pipeline.png" class="centerImage" width="350">
+<center><img src="Images/Pipeline.png" alt="what image shows" height="150" width="200"></center>
 
 
 
