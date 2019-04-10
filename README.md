@@ -82,10 +82,10 @@ Columns explanation:
    e) All columns after <b>Difference_Product-sizes</b> present the clustered TPM values to each RNA-Seq sample. This means that all transcripts, with the same product Size were summed in terms of transcript expression in each sample. The RNA-Seq samples displayed are all samples present in the folder where SALMON quantification was performed.
 
 
-<b>FileWithAllSampleTPMs.txt</b> contains the list of transcripts and TPM (Transcript per Million) values per sample (clustered).
+<b>FileWithAllSampleTPMs.txt</b> contains the list of transcripts and TPM values per sample (not clustered).
 
 
-<b>Other_files</b> folder contains intermediate files.
+<b>Other_files</b> and <b>Expression_files</b> folders contain intermediate files.
 
 <h2> Running the algorithm</h2>
 
