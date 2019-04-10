@@ -87,7 +87,7 @@ Columns explanation:
 
    c) Column <b>Best_RNA-Seq_partner_product-size</b> shows the most similar RNA-seq product Sizes identified;
 
-   d) Column <b>Difference_Product-sizes</b> displays the numerical difference between the HR-RTPCR product Size value and the RNA-seq one. When both product Sizes (HR-RTPCR and RNA-seq) are equal the difference is zero. We considered valid a maximum differences of 6 nucleotides. 
+   d) Column <b>Difference_Product-sizes</b> displays the numerical difference between the HR-RTPCR product Size value and the RNA-seq one. When both product Sizes (HR-RTPCR and RNA-seq) are equal the difference is zero - a perfect match. We considered valid a maximum difference of 6 nucleotides. 
 
    e) All columns after <b>Difference_Product-sizes</b> present the clustered TPM values to each RNA-Seq sample. This means that all transcripts, with the same product Size were summed in terms of transcript expression in each sample. The RNA-Seq samples displayed are all samples present in the folder where SALMON quantification was performed.
 
