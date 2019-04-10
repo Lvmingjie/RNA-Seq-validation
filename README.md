@@ -10,6 +10,11 @@ Contact: Paulo.Flores@hutton.ac.uk / paulorapazote@gmail.com
 
 The algorithm HR-RTPCR_RNA-Seq_Comparison.sh is a compilation of 7 small bash shell scripts that associate HR-RTPCR data with a transcriptome previously quantified with SALMON. The paper (ref.) describes in detail the methodology behind the algorithm. However, below is presented more information about the format of input and output files, also an explanation about the main modules and running details.     
 
+<p style="text-align:center">
+<img src="Images/Pipeline.png" width="350">
+</p>
+
+
 <h2>Tools and steps needed before running the algorithm </h2>
 
 Before running the HR-RTPCR_RNA-Seq_Comparison.sh algorithm was necessary to run SALMON, a pseudo alignment tool (algorithm tested with SALMON version 0.8.2). We aligned each of our RNA-Seq read samples to the reference transcriptome (transcriptome.fasta file) after index generation. Each SALMON sample output must be in a individual folder, line 29 of the algorithm contains the path to the folder where these samples ouput should be. 
