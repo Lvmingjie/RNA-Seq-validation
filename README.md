@@ -83,7 +83,7 @@ Columns explanation:
 
    a) The first columns - <b>Primer</b>, <b>Size</b> and the following 5 samples columns displays the HR-RTPCR information (also present in the <b>PCR_productsAndProportions.txt</b> file)  
    
-   b) Column <b>Transcripts</b> displays the RNA-Seq transcripts where the primers aligned (blastn-short) perfectly. These transcripts also have the most similar product Size to the HR-RTPCR one;
+   b) Column <b>Transcripts</b> displays the RNA-Seq transcripts, identified by the algorithm, where the primers aligned (blastn-short) perfectly. These transcripts also have the most similar product Size to the HR-RTPCR one;
 
    c) Column <b>Best_RNA-Seq_partner_product-size</b> shows the most similar RNA-seq product Sizes identified;
 
