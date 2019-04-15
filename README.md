@@ -129,7 +129,7 @@ bash <b>./HR-RTPCR_RNA-Seq_Comparison.sh</b>
 
 <b>Module 5</b> : To each pair of primers, the transcripts with the same product Size are clustered in terms of levels of expression (the levels of expression are summed to each product Size);
 
-<b>Module 6</b> : The product Sizes from HR-RTPCR and RNA-seq data are compared and are established the best assocations. Sometimes the products are not exactly equal in terms of length, in these case the algorithm tries to identify the nearest product Size available to form the association. \
+<b>Module 6</b> : The product Sizes from HR-RTPCR and RNA-seq data are compared and are established the best assocations. Sometimes the products are not exactly equal in terms of length, in these cases the algorithm tries to identify the nearest product Size available to form the association. \
 When the number of product Sizes available from HR-RTPCR and RNA-seq are different, there are two possible scenarios: \
 a) an "Unknown-Partner" is reported when HR-RTPCR has more products than RNA-Seq (example: HR-RTPCR data predicted 4 products but RNA-seq only predicted 3); \
 b) RNA-Seq predicted more products than HR-RTPCR (example: HR-RTPCR data predicted 3 products but RNA-seq predicted 4), in this case the remaining RNA-seq product is "Orphan" (no HR-RTPCR association available) and deposited in the file ./Other_files/Orphan-Transcripts-List.txt.        
