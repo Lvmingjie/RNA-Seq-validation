@@ -123,7 +123,7 @@ Module 1 - Blast generates a transcriptome database with the transcriptome suppl
 
 Module 2 - Based on the blast alignments are identied all transcripts where the pair of primers bind perfectly. Problematic cases are identified and filtered (partial alignments, multi-alignments, primers without target); 
 
-Module 3 : Based on the list of transcripts identified, the levels of expression (TPM) are extracted from the different samples quantified; 
+Module 3 : Based on the list of transcripts identified, the levels of expression (TPM) are extracted from the different samples quantified with SALMON; 
 
 Module 4 : The product Size associated with each transcript identified is calculated; 
 
