@@ -50,9 +50,9 @@ Three input files are required:
 
  a) Column 1, <b>Primer</b> names (without _R or _F termination, example - Hv43); 
 
- b) Column 2, HR-RTPCR product <b>Size</b> (the calculated nucleotide distance between primer pairs);
+ b) Column 2, HR-RTPCR <b>product Size</b> (the calculated nucleotide distance between primer pairs);
 
- c) Columns 3, 4, ... contain individual sample proportions of each primer product Size;
+ c) Columns 3, 4, ... contain individual sample <b>proportions</b> of each primer <b>product Size</b>;
 
 
 <h2> Output Files </h2>
