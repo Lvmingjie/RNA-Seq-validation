@@ -121,7 +121,7 @@ bash <b>./HR-RTPCR_RNA-Seq_Comparison.sh</b>
 
 Module 1 - Blast generates a transcriptome database with the transcriptome supplied in fasta format; The primer sequences are blasted (blastn-short) to the previous database;
 
-Module 2 - Based on the blast alignments are identied all transcripts where the the pair of primers bind perfectly. Problematic cases are identified and filtered (partial alignments, multi-alignments, primers without target); 
+Module 2 - Based on the blast alignments are identied all transcripts where the pair of primers bind perfectly. Problematic cases are identified and filtered (partial alignments, multi-alignments, primers without target); 
 
 Module 3 : Based on the list of transcripts identified, the levels of expression (TPM) are extracted from the different samples quantified; 
 
