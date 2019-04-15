@@ -8,7 +8,7 @@ Contact: Paulo.Flores@hutton.ac.uk / paulorapazote@gmail.com
 
 <h2> Description of the algorithm </h2>
 
-The algorithm HR-RTPCR_RNA-Seq_Comparison.sh is a compilation of 7 small bash shell scripts that associate HR-RTPCR data with a transcriptome previously quantified with SALMON. The paper (ref.) describes in detail the methodology behind the algorithm. However, below is presented more information about the format of input and output files, also an explanation about the main modules and running details.\
+The algorithm HR-RTPCR_RNA-Seq_Comparison.sh is a compilation of 7 small modules, written in bash shell, that associates HR-RTPCR data with a transcriptome previously quantified with SALMON. The paper (ref.) describes in detail the methodology behind the algorithm. However, below is presented more information about the format of input and output files, running details and also an explanation about the main modules.\
 \
 \
  Pipeline describing the algorithm to compare HR-RT-PCR and RNA-seq alternatively spliced transcript proportions and correlations:
@@ -104,21 +104,21 @@ Based on the information of the previous file, we calculated to each RNA-Seq gen
 
 bash <b>./HR-RTPCR_RNA-Seq_Comparison.sh</b>
 
-<h2> Description of the individual scripts (modules)</h2> 
+<h2> Description of the main steps of the algorithm (modules)</h2> 
 
 Module 1 - Blast generates a transcriptome database with the transcriptome supplied in fasta format; The primer sequences are blasted (blastn-short) to the previous database;
 
 Module 2 - Based on the blast alignments are identied all transcripts where the the pair of primers bind perfectly. Problematic cases are identified and filtered (partial alignments, multi-alignments, primers without target); 
 
-Module 3 : Based on the list of transcripts identified, the TPM levels of expression are extracted from the ...
+Module 3 : Based on the list of transcripts identified, the levels of expression (TPM) are extracted from the different samples quantified; 
 
-Module 4 :
+Module 4 : The product Size associated with each transcript identified is calculated; 
 
-Module 5 :
+Module 5 : To each pair of primers, the transcripts with the same product Size are clustered in terms of levels of expression (the levels of expression are summed to each product Size);
 
-Module 6 :
+Module 6 : The product Sizes from HR-RTPCR data and RNA-seq are compared and are established the best assocations. Sometimes the products are not exactly equal, in these case the algorithm tries to identify the nearest product Size available to form the association. When the number of product Sizes available are different there are two possible scenarios: a) an "Unknown-Partner" is reported when HR-RTPCR has more products than RNA-Seq (example: HR-RTPCR data predicted 4 products but RNA-seq only predicted 3) ; b) RNA-Seq predicted more products than HR-RTPCR (example: HR-RTPCR data predicted 3 products but RNA-seq predicted 4), in this case the remaining RNA-seq product is "Orphan" (no HR-RTPCR association available) and deposited in the file ./Other_files/Orphan-Transcripts-List.txt.        
 
-Module 7 :
+Module 7 : Generation of final output files and folders. 
 
 
 
