@@ -36,6 +36,23 @@ Three input files are required:
 
 2. <b>PrimersSequences.fasta</b>, this file contains the primer sequences in fasta format. Each pair of primers (reverse and forward) have similar name but should have different terminations: _R (reverse) and _F (forward), example - Hv43_R and Hv43_F. 
 
+       >Hv29C_R
+       GGTCGGTGCAACATTCCGG
+       >Hv29_F
+       GCTGACACCTACAAGAGCCAGG
+       >Hv43_R
+       CGCTGTCAGATGTGTACTGACCAA
+       >Hv43_F
+       TTCGCCTCTGCCTTAGCCTC
+       >Hv101_R
+       CTGTCGAATCTTCGTTCCTCC
+       >Hv101_F
+       CCACAACAACTGCCTTAAGC
+       >Hv104_R
+       GGCGCGAGTGCTAGGGCCACG
+       >Hv104_F
+       GGATTGGTTTCCTTCGCCGG
+
 3. <b>rtPCR_productsAndProportions.txt</b> (file located in the same folder where we run the algorithm), tab-delimited text file HR-RTPCR data. Example of the rtPCR_productsAndProportions.txt file:
         
         Primer Size Sample1 Sample2 Sample3 Sample4 Sample5
