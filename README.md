@@ -2,7 +2,7 @@
 
 # RNA-Seq-validation
 
-Author: Paulo Flores : 2019
+Author: Paulo Rapazote-Flores : 2019
 
 Contact: Paulo.Flores@hutton.ac.uk / paulorapazote@gmail.com
 
