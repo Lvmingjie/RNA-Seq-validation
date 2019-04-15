@@ -26,7 +26,7 @@ Before running the <b>HR-RTPCR_RNA-Seq_Comparison.sh</b> algorithm was necessary
 
 Also, it is necessary <b>ncbi blast</b> tool (algorithm tested with version ncbi-blast-2.2.28+), path mentioned lines 42 and 50.
 
-The default number of processing threads is 4, however this number can be changed (algorithm lines 2 and 50). The necessary running time was around 20 minutes (transcriptome around 180 thousands transcripts and 90 primer pairs - 230 HR-RTPCR primer products). 
+The default number of <b>processing threads</b> is 4, however this number can be changed (algorithm lines 2 and 50). The necessary running time was around 20 minutes (transcriptome around 180 thousands transcripts and 90 primer pairs - 230 HR-RTPCR primer products). 
 
 <h2> Input Files</h2>
 
