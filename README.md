@@ -48,10 +48,6 @@ Three input files are required:
        CTGTCGAATCTTCGTTCCTCC
        >Hv101_F
        CCACAACAACTGCCTTAAGC
-       >Hv104_R
-       GGCGCGAGTGCTAGGGCCACG
-       >Hv104_F
-       GGATTGGTTTCCTTCGCCGG
 
 3. <b>rtPCR_productsAndProportions.txt</b> (file located in the same folder where we run the algorithm), tab-delimited text file HR-RTPCR data. Example of the rtPCR_productsAndProportions.txt file:
         
