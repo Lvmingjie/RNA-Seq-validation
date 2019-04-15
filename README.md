@@ -8,7 +8,7 @@ Contact: Paulo.Flores@hutton.ac.uk / paulorapazote@gmail.com
 
 <h2> Description of the algorithm </h2>
 
-The algorithm HR-RTPCR_RNA-Seq_Comparison.sh is a compilation of 7 small modules, written in bash shell, that associates HR-RTPCR data with a transcriptome previously quantified with SALMON. The paper (ref.) describes in detail the methodology behind the algorithm. However, below is presented more information about the format of input and output files, running details and also an explanation about the main modules.\
+The algorithm HR-RTPCR_RNA-Seq_Comparison.sh is a compilation of 7 small modules, written in bash shell, that associates HR-RTPCR data with a transcriptome previously quantified with SALMON. The paper (ref.) describes in detail the methodology behind the algorithm. However, below is presented more information about input and output formats files, running details and also an explanation about the main modules.\
 \
 \
  Pipeline describing the algorithm to compare HR-RT-PCR and RNA-seq alternatively spliced transcript proportions and correlations:
