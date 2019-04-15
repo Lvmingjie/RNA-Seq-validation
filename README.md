@@ -125,7 +125,7 @@ Module 2 - Based on the blast alignments are identied all transcripts where the 
 
 Module 3 : Based on the list of transcripts identified, the levels of expression (TPM) are extracted from the different samples quantified with SALMON; 
 
-Module 4 : The product Size associated with each transcript identified is calculated; 
+Module 4 : Product Sizes associated with each transcript identified are calculated; 
 
 Module 5 : To each pair of primers, the transcripts with the same product Size are clustered in terms of levels of expression (the levels of expression are summed to each product Size);
 
