@@ -24,7 +24,7 @@ The algorithm <b>HR-RTPCR_RNA-Seq_Comparison.sh</b> is a compilation of 7 small 
 
 Before running the <b>HR-RTPCR_RNA-Seq_Comparison.sh</b> algorithm was necessary to run SALMON, a pseudo alignment tool (algorithm tested with SALMON version 0.8.2). We aligned each of our RNA-Seq read samples to the reference transcriptome (<b>transcriptome.fasta</b> file) after index generation. Each SALMON sample output must be in a individual folder, line 29 of the algorithm contains the path to the folder where these samples ouput should be. 
 
-Also, it is necessary ncbi blast tool (algorithm tested with version ncbi-blast-2.2.28+), path mentioned lines 42 and 50.
+Also, it is necessary <b>ncbi blast</b> tool (algorithm tested with version ncbi-blast-2.2.28+), path mentioned lines 42 and 50.
 
 The default number of processing threads is 4, however this number can be changed (algorithm lines 2 and 50). The necessary running time was around 20 minutes (transcriptome around 180 thousands transcripts and 90 primer pairs - 230 HR-RTPCR primer products). 
 
